@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureBytes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body { 
+            background: url('https://via.placeholder.com/1600x900?text=Latest+Tech+Background') no-repeat center center fixed; 
+            background-size: cover; 
+            transition: background 0.3s; 
+        }
+        .blog-container { max-width: 100%; margin: auto; padding: 20px; }
+        .blog-post { background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .blog-post img { width: 100%; border-radius: 10px; }
+        .dark-mode { background-color: #121212 !important; color: white !important; }
+        .dark-mode .blog-post { background: #1e1e1e; }
+        .footer-links { 
+            background: #343a40; 
+            color: white; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: 30px;
+        }
+        .footer-links a {
+            color: #f8f9fa;
+            font-size: 1.2rem;
+            margin: 10px;
+            display: inline-block;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: #17a2b8; }
+        .styled-name span:first-child, .styled-name span:nth-child(2), .styled-name span:nth-child(3) { color: red; }
+        .styled-name span:nth-last-child(2), .styled-name span:last-child { color: blue; }
+        .about-highlight { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand styled-name" href="#">
+                <span>F</span><span>U</span><span>T</span>URΞBY<span>T</span><span>E</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-light" id="darkModeToggle">Dark Mode</button>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1 class="text-center my-4 styled-name">
+            <span>F</span><span>U</span><span>T</span>URΞBY<span>T</span><span>E</span>
+        </h1>
+        
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <a href="https://www.flipkart.com/search?q=latest+mobile" target="_blank">
+                    <img src="https://via.placeholder.com/600x400?text=Latest+Mobile" class="img-fluid rounded" alt="Latest Mobile">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="https://www.flipkart.com/search?q=latest+laptop" target="_blank">
+                    <img src="https://via.placeholder.com/600x400?text=Latest+Laptop" class="img-fluid rounded" alt="Latest Laptop">
+                </a>
+            </div>
+        </div>
+        
+        <div class="row my-4">
+            <div class="col-md-6">
+                <a href="https://www.flipkart.com/search?q=latest+jewelry" target="_blank">
+                    <img src="https://via.placeholder.com/600x400?text=Latest+Jewelry" class="img-fluid rounded" alt="Latest Jewelry">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="https://www.flipkart.com/search?q=latest+electronics" target="_blank">
+                    <img src="https://via.placeholder.com/600x400?text=Latest+Electronics" class="img-fluid rounded" alt="Latest Electronics">
+                </a>
+            </div>
+        </div>
+        
+        <div id="about" class="my-5">
+            <h2>About Us</h2>
+            <p class="about-highlight">हमारी वेबसाइट पर, हम आपके बजट में बेहतरीन मोबाइल, लैपटॉप, ज्वेलरी और इलेक्ट्रॉनिक्स की कीमतें और लिंक सीधे Flipkart और Meesho से जोड़ते हैं, ताकि आपको किफायती और बेहतरीन प्रोडक्ट्स आसानी से मिल सकें।</p>
+        </div>
+        
+        <div id="contact" class="my-5">
+            <h2>Contact Us</h2>
+            <p>Email: ranamanjeet805@gmail.com</p>
+            <p>Phone: +91 9992475192</p>
+        </div>
+    </div>
+    
+    <footer class="footer-links">
+        <p>Shop Now:</p>
+        <a href="https://www.flipkart.com" target="_blank">🛒 Flipkart</a>
+        <a href="https://www.meesho.com" target="_blank">🛍️ Meesho</a>
+    </footer>
+    
+    <script>
+        document.getElementById("darkModeToggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
